@@ -153,13 +153,15 @@ Skewness:
 =========
 If the mean is not at the center it means it could be pulled/skewed towards either right or left.
 
-If Mean is pulled to the right. This means there are some large values towards the right and 
-the distribution has a long tail at right hence it is right skewed. For example a few people earns
-extremely high.
+If Mean is pulled to the right. This means there are some large values towards the left and 
+the distribution has a long tail at right but most frequency of values are at the right,
+hence it is right skewed. For example a few people earns extremely high. 
+The tail is longer on the right. The mean is higher than the median.
 
-If Mean is pulled to the left. This means there are some large values towards the left and 
-the distribution has a long tail at left hence it is left skewed. For example most people retire
-at a set age but a few retire early.
+If Mean is pulled to the left. This means there are some large values towards the right side and 
+the distribution has a long tail at left but most frequency of values are at the right,
+hence it is left skewed. For example most people retire, at a set age but a few retire early.
+The tail is longer on the left. The mean is less than the median.
 
 
 
