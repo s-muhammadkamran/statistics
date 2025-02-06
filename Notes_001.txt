@@ -1,0 +1,171 @@
+Probability Distribution:
+
+Random Variable:
+================
+
+Anything which have some random outcomes. Like Roll of a dice. Denoted by Capital letters.
+
+X = "Roll of a dice"
+
+Discrete Random Variable: Like 1, 2, 3, 4, 5, 6. Values are in interval and not continuous
+
+Continuous Random Variable: Like 1.1, 1.2, 1.3 and so on Where values can be continuous
+
+Sample Space:
+=============
+
+All the possible outcomes of a random variable. For example a dice can have the following as sample sapace:
+
+S = {1, 2, 3, 4, 5, 6} as sample Space
+
+Probability Distribution:
+=========================
+
+Probability of an event to occour. Like the outcomes on a dice have the following probabilities:
+
+P(X=1) = 1/6
+P(X=2) = 1/6
+P(X=3) = 1/6
+P(X=4) = 1/6
+P(X=5) = 1/6
+P(X=6) = 1/6
+
+This can be denoted as Probability mass function. 
+You can pass a input and it gives you the probability of it occouring as output.
+This can also be represented as graph
+
+    |
+    |
+1/6-| _ _ _ _ _ _  
+    | 
+    |
+    --------------
+      1 2 3 4 5 6
+
+Probability Density Function (PDF):
+===================================
+
+A probability of a discreate value is 1/n where n is no of possible outcomes.
+
+A probability of a continuous variable is 0 because a continuous variable can take any value between 
+1 to 2, the choices are infinite like 1.1, 1.11, 1.12 and so on. So the possibility of taking an 
+specific value as outcome is infinite (1/infinity) hence it's probabilty is 0.
+
+We graph the probability of an discrete variable as graph bar plots.
+Because the choices are infinite we can't graph a continuous variable probability as bar plot.
+Instead we use a bell curve diagram to show that it can take any value between an specific range.
+Then we shade the area to denote it's probability. This is called a PDF (Probability Density Function).
+In Calculus we use Integration for the same function.
+
+|        . .
+|      .     .
+|    .         .
+|....            ....
+----------------------      
+
+A Parameters is a number which tells us something important about the distribution. Like
+The average height is 60 in a distribution.
+The average IQ is 100
+The probability of occouring heads is 0.5
+
+The Bernouli Distribution:
+==========================
+
+It's the building block of many other distributions in statistics.
+It's a discrete distribution with 2 possible outcomes.
+Like 0 and 1, true or false, yes or no, success or failure, head or tail etc.
+We can plot this using a bar plot.
+
+P(X=1) = p           [P(X=0) = 0.5]
+P(X=0) = 1 - p       [P(X=1) = 1 - P(X=0) = 1 - 0.5 = 0.5]
+p ε[0,1]             
+f(x) = {p, x=1 ---  1-p, x=0}
+
+The Uniform Distribution:
+=========================
+
+It's a continuous distribution. The outcome can be anything between a range.
+Like Height of a person it can be any number i.e. 5.3, 5.4, 5.41, 6.1 etc
+Or a location in a 100 meters long track. It can be any number between 1 and 100.
+In a continuous distribution a probability of a single event to occour is 0 because of infinite possibilities.
+Hence 1/infinity is undefined or we can say it is not possible to calculate hence it is 0.
+Or we can say that in a uniform distribution all the numbers have equaly likely probability of occouring.
+
+Hence we define the Probability Density Function of a Uniform Distribution as any value between a range
+with equaly likely probability.
+
+|
+|
+|_______________  
+| 
+|
+----------------
+0            100
+
+P(X=3.1415) = 0  (It's not possible to calculate due to infinite no of possibilities)
+
+Hence we don't have a Probability Mass Function in Uniform distribution.
+
+When the probability of a single value is not possible then we ask for the probability of a group of numbers.
+Like, what is the probability of X to be between 0 and 10
+We can then shade the area between 0 and 10 in a uniform distribution graph to denote the probability.
+We can find the probability as 
+
+Sample Length x (1 / Population Length)
+
+P(0 <= X >= 50)   (Probability of X between 0 and 50)
+50 x (1 / 100) = 50 / 100 = 1/2 or 0.5
+If total values are 100 than probability of X being 0 and 50 is 1/2
+
+P(60 <= X >= 75) 
+= (75 - 60) x (1/100)
+= 15 x (1/100)
+= 15 / 100 = 15/100 or 0.15
+
+|
+|
+|_______________  
+|     |xxx| 
+|     |xxx|
+----------------
+0     60 75   100
+
+The Normal Distribution:
+========================
+
+It's a continuous distribution.
+It is defined for all real numbers from -infinity to infinity.
+It is shown on a graph as a bell curve.
+Parameters are: μ (mu) = Mean and σ (sigma) = Standard Deviation
+
+Sigma is the standard deviation of this distribution.
+Variance = Summation[(xi - Mean)^2] / N
+Std Dev = Square Root of (Variance)
+
+In a Standard Normal Distribution Mean is at the center.
+This means that the values are distributed equally around positive and negative sides of the mean.
+We say that a Standard Normal Distribution is perfectly Symetrical.
+
+68% of all the data is distributed under 1 std from Mean
+95% of all the data is distributed under 2 std from Mean
+
+Skewness:
+=========
+If the mean is not at the center it means it could be pulled/skewed towards either right or left.
+
+If Mean is pulled to the right. This means there are some large values towards the right and 
+the distribution has a long tail at right hence it is right skewed. For example a few people earns
+extremely high.
+
+If Mean is pulled to the left. This means there are some large values towards the left and 
+the distribution has a long tail at left hence it is left skewed. For example most people retire
+at a set age but a few retire early.
+
+
+
+
+
+
+
+
+
